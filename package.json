@@ -26,16 +26,16 @@
         "senna-bot",
         "baileys-md"
     ],
-    "homepage": "https://github.com/FG98F/senna-bot",
+    "homepage": "https://github.com/Whatsapp1231234/199",
     "author": {
         "name": "FG98"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/FG98F/senna-bot.git"
+        "url": "git+https://github.com/Whatsapp1231234/199.git"
     },
     "bugs": {
-        "url": "https://github.com/FG98F/senna-bot/issues"
+        "url": "https://github.com/Whatsapp1231234/199/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
