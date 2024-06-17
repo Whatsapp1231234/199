@@ -8,7 +8,7 @@ let handler = async (m, { conn, groupMetadata }) => {
 }
 handler.help = ['link']
 handler.tags = ['group']
-handler.command = ['linkgroup', 'link'] 
+handler.command = ['linkgroup', 'ссылка'] 
 handler.group = true
 handler.botAdmin = true
 
