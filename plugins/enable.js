@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
   let type = (args[0] || '').toLowerCase()
   let isAll = false, isUser = false
   switch (type) {
-    case 'welcome':
+    case 'приветствие':
     case 'bv':
     case 'bienvenida':
       if (!m.isGroup) {
@@ -23,7 +23,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       chat.welcome = isEnable
       break
       
-      case 'detect':
+      case 'обнаружить':
       case 'detector':
         if (!m.isGroup) {
          if (!isOwner) {
@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
        chat.detect = isEnable
      break
     
-    case 'antidelete':
+    case 'антиудаление':
     case 'delete':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -55,7 +55,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
     chat.useDocument = isEnable
     break
-    case 'public':
+    case 'общественный':
     case 'publico':
       isAll = true
       if (!isROwner) {
@@ -64,7 +64,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       global.opts['self'] = !isEnable
       break
-    case 'antilink':
+    case 'антиссылка':
     case 'antilinkwa':
     case 'antilinkwha':
       if (m.isGroup) {
@@ -86,7 +86,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.captcha = isEnable
       break
-      case 'antibotclone':
+      case 'антиботклон':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn)
@@ -118,7 +118,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       user.chatbot = isEnable
      break
      
-    case 'restrict':
+    case 'ограничить':
     case 'restringir':
       isAll = true
       if (!isOwner) {
@@ -141,7 +141,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       bot.solopv = isEnable
       break
       
-    case 'gponly':
+    case 'толькогруппы':
     case 'onlygp':
     case 'grouponly':
     case 'sologp':
@@ -161,26 +161,19 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 ≡ Lista de Opciones
 
 ┌─⊷ *АДМИН*
-▢ captcha
-▢ welcome
-▢ antilink
-▢ detect 
-▢ document
-▢ nsfw
+▢ приветствие
+▢ антиссылка
 └───────────── 
-┌─⊷ *USERS*
-▢ autolevelup
-▢ chatbot 
-└─────────────
 ┌─⊷ *СОЗДАТЕЛЬ*
-▢ antibotclone
-▢ public
-▢ solopv
-▢ sologp
+▢ антиботклон
+▢ общественный
+▢ антиудаление
+▢ толькогруппы
+▢ ограничить
 └─────────────
-*📌 Ejemplo :*
-*${usedPrefix}on* welcome
-*${usedPrefix}off* welcome
+*📌 пример:*
+*${usedPrefix}включить* приветствие
+*${usedPrefix}выключить* приветствие
 `)
       throw false
 }
