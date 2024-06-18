@@ -8,7 +8,7 @@ global.owner = [
 ] //Numeros de owner 
 
 global.mods = [''] 
-global.prems = ['50489079501', '573143917092']
+global.prems = ['+79011033947', '+79011033947']
 global.APIs = { // API Prefix
   // name: 'https://website' 
   nrtm: 'https://fg-nrtm.ddns.net',
@@ -20,7 +20,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'Senna┃ᴮᴼᵀ' 
+global.packname = 'Хулиган┃ᴮᴼᵀ' 
 global.author = '@fg98' 
 
 //--info FG
