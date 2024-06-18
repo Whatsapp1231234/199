@@ -21,8 +21,8 @@ let m2 = `
    
 }
 
-handler.help = ['меню']
+handler.help = ['меню2']
 handler.tags = ['main']
-handler.command = ['меню', 'audios'] 
+handler.command = ['меню2', 'audios'] 
 
 export default handler
