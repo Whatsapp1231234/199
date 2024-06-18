@@ -4,9 +4,9 @@ let handler = async function (m, { conn, text, usedPrefix }) {
 let m2 = `
 
 ┌─⊷ *ОСНОВНОЕ МЕНЮ* 
-▢ Bot
-▢ Buenos días
-▢ Buenas tardes 
+▢ Снести
+▢ Обновить
+▢ Ссылка 
 ▢ Buenas noches
 ▢ Fino señores
 ▢ Sad
@@ -21,8 +21,8 @@ let m2 = `
    
 }
 
-handler.help = ['меню2']
+handler.help = ['меню']
 handler.tags = ['main']
-handler.command = ['меню2', 'audios'] 
+handler.command = ['меню', 'audios'] 
 
 export default handler

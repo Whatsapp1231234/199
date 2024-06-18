@@ -160,7 +160,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       if (!/[01]/.test(command)) return m.reply(`
 ≡ Lista de Opciones
 
-┌─⊷ *ADMIN*
+┌─⊷ *АДМИН*
 ▢ captcha
 ▢ welcome
 ▢ antilink
@@ -172,7 +172,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 ▢ autolevelup
 ▢ chatbot 
 └─────────────
-┌─⊷ *OWNER*
+┌─⊷ *СОЗДАТЕЛЬ*
 ▢ antibotclone
 ▢ public
 ▢ solopv
