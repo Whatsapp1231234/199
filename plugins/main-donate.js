@@ -20,7 +20,7 @@ conn.sendFile(m.chat, img, 'img.jpg', don, m, null, rpyp)
 
 handler.help = ['donate']
 handler.tags = ['main']
-handler.command = ['apoyar', 'donate', 'donar'] 
+handler.command = ['apoyar', 'оплата', 'donar'] 
 
 export default handler
 
