@@ -2,8 +2,8 @@
 let handler = async function (m, { conn, text, usedPrefix }) {
   
 let m2 = `
-≡ Use estos comandos sin el prefijo: *${usedPrefix}*
-┌─⊷ *AUDIOS* 
+
+┌─⊷ *ОСНОВНОЕ МЕНЮ* 
 ▢ Bot
 ▢ Buenos días
 ▢ Buenas tardes 
@@ -21,8 +21,8 @@ let m2 = `
    
 }
 
-handler.help = ['меню2']
+handler.help = ['меню']
 handler.tags = ['main']
-handler.command = ['меню2', 'audios'] 
+handler.command = ['меню', 'audios'] 
 
 export default handler
